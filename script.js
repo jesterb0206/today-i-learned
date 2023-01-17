@@ -28,7 +28,6 @@ const isCorrect = votesFalse < totalUpvotes;
 console.log(isCorrect);
 
 console.log(parseInt('25.555bbb'));
-*/
 
 function calcFactAge(year) {
   const currentYear = new Date().getFullYear();
@@ -54,7 +53,6 @@ const calcFactAge2 = (year) =>
 console.log(calcFactAge2(2015));
 console.log(calcFactAge2(2037));
 
-/*
 let votesInteresting = 20;
 let votesMindblowing = 5;
 console.log(votesInteresting === votesMindblowing);
@@ -94,3 +92,15 @@ const str = `The current fact is "${text}". It is ${calcFactAge(
 }.`;
 console.log(str);
 */
+
+const fact = ['Lisbon is the capital of Portugal', 2015, true];
+console.log(fact);
+console.log(fact[2]);
+console.log(fact.length);
+console.log(fact[fact.length - 1]);
+
+const [text, createdIn] = fact;
+console.log(createdIn);
+
+const newFact = [...fact, 'society'];
+console.log(newFact);
