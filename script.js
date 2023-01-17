@@ -50,9 +50,26 @@ const form = document.querySelector('.fact-form');
 const factsList = document.querySelector('.facts-list');
 
 // CREATE DOM ELEMENTS; RENDER FACTS IN LIST
-
 factsList.innerHTML = '';
-createFactsList(initialFacts);
+
+// LOAD DATA FROM SUPABASE
+loadFacts();
+
+async function loadFacts() {
+  const res = await fetch(
+    'https://ripwscolfdqyhaquqnlv.supabase.co/rest/v1/facts',
+    {
+      headers: {
+        apikey:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJpcHdzY29sZmRxeWhhcXVxbmx2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzM5MzEyMTcsImV4cCI6MTk4OTUwNzIxN30.anX-MRW7O90dKiD0YC1pDlwYXu4XpbZFoG4PHExH6dU',
+        authorization:
+          'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJpcHdzY29sZmRxeWhhcXVxbmx2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzM5MzEyMTcsImV4cCI6MTk4OTUwNzIxN30.anX-MRW7O90dKiD0YC1pDlwYXu4XpbZFoG4PHExH6dU',
+      },
+    }
+  );
+  const data = await res.json();
+  createFactsList(data);
+}
 
 function createFactsList(dataArray) {
   // factsList.insertAdjacentHTML('afterbegin', '<li>Bradley</li>');
@@ -70,10 +87,10 @@ function createFactsList(dataArray) {
       <span class="tag" style="background-color: #3b82f6">${fact.category}<span>
     </li>`
   );
+  console.log(htmlArr);
+  const html = htmlArr.join('');
+  factsList.insertAdjacentHTML('afterbegin', html);
 }
-console.log(htmlArr);
-const html = htmlArr.join('');
-factsList.insertAdjacentHTML('afterbegin', html);
 
 // TOGGLE FORM VISIBILITY
 
