@@ -45,7 +45,7 @@ console.log(calcFactAge(1990));
 console.log(calcFactAge(2037));
 
 let votesInteresting = 20;
-let votesMindblowing = 0;
+let votesMindblowing = 5;
 console.log(votesInteresting === votesMindblowing);
 if (votesInteresting === votesMindblowing) {
   alert('This fact is equally interesting and mindblowing');
@@ -62,3 +62,13 @@ if (votesMindblowing) {
 } else {
   console.log('Not so special ...');
 }
+
+let votesFalse = 77;
+const totalUpvotes = votesInteresting + votesMindblowing;
+
+const message =
+  totalUpvotes > votesFalse
+    ? 'The fact is true'
+    : 'Might be false, check more sources ...';
+
+// alert(message);
