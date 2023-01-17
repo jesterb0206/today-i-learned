@@ -68,7 +68,10 @@ async function loadFacts() {
     }
   );
   const data = await res.json();
-  createFactsList(data);
+  // console.log(data);
+  const filteredData = data.filter((fact) => fact.category === 'technology');
+
+  createFactsList(filteredData);
 }
 
 function createFactsList(dataArray) {
@@ -84,10 +87,11 @@ function createFactsList(dataArray) {
           target="_blank"
           >(Source)</a>
       </p>
-      <span class="tag" style="background-color: #3b82f6">${fact.category}<span>
+      <span class="tag" style="background-color: ${
+        CATEGORIES.find((cat) => cat.name === fact.category).color
+      }">${fact.category}<span>
     </li>`
   );
-  console.log(htmlArr);
   const html = htmlArr.join('');
   factsList.insertAdjacentHTML('afterbegin', html);
 }
@@ -103,6 +107,9 @@ btn.addEventListener('click', function () {
     btn.textContent = 'Share a fact';
   }
 });
+
+console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
+console.log([7, 64, 6, -23, 11].find((el) => el > 10));
 
 // JavaScript Fundamentals
 
