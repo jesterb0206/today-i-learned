@@ -1,5 +1,8 @@
 const btn = document.querySelector('.btn-open');
 const form = document.querySelector('.fact-form');
+const factsList = document.querySelector('.facts-list');
+
+factsList.innerHTML = '';
 
 btn.addEventListener('click', function () {
   if (form.classList.contains('hidden')) {
@@ -10,6 +13,8 @@ btn.addEventListener('click', function () {
     btn.textContent = 'Share a fact';
   }
 });
+
+// JavaScript Fundamentals
 
 /*
 let votesInteresting = 23;
@@ -91,7 +96,7 @@ const str = `The current fact is "${text}". It is ${calcFactAge(
   totalUpvotes > votesFalse ? 'correct' : 'not true'
 }.`;
 console.log(str);
-*/
+
 
 const fact = ['Lisbon is the capital of Portugal', 2015, true];
 console.log(fact[2]);
@@ -191,3 +196,4 @@ function calcFactAge(year) {
 const factAges = initialFacts.map((el) => calcFactAge(el.createdIn));
 console.log(factAges);
 console.log(factAges.join('-'));
+*/
