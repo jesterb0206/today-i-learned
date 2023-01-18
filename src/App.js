@@ -49,6 +49,10 @@ function Counter() {
 }
 
 function App() {
+  // 1. DEFINE STATE VARIABLE
+
+  const [showForm, setShowForm] = useState(false);
+
   const appTitle = 'Today I Learned';
 
   return (
@@ -60,12 +64,18 @@ function App() {
           <h1>{appTitle}</h1>
         </div>
 
-        <button className="btn btn-large btn-open">Share a fact</button>
+        <button
+          className="btn btn-large btn-open"
+          // 3. UPDATE STATE VARIABLE
+          onClick={() => setShowForm((show) => !show)}
+        >
+          Share a fact
+        </button>
       </header>
 
-      <Counter />
+      {/* 2. USE STATE VARIABLE */}
 
-      <NewFactForm />
+      {showForm ? <NewFactForm /> : null}
 
       <main className="main">
         <CategoryFilter />
