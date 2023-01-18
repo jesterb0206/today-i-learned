@@ -129,6 +129,10 @@ h1 {
   background-color: #292524;
 }
 
+.vote-buttons button:disabled {
+  background-color: #44403c;
+}
+
 ul {
   list-style: none;
 }
