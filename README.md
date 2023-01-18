@@ -2,6 +2,15 @@
 
 <br>
 
+## License
+
+<br>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[This application is under the MIT license](https://opensource.org/licenses/MIT)
+
+<br>
+
 ## Installation
 
 <br>
@@ -18,7 +27,7 @@ To upload a fact follow these steps:
 
 1. Press the `Share a Fact` button to open the fact form
 2. Enter your facts' text in 200 characters or less
-3. Enter your trustworthy source beginning with `'http://` or `https://`
+3. Enter your trustworthy source beginning with `http://` or `https://`
 4. Select a category
 5. Press the `Post` button.
 
