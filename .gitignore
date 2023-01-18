@@ -67,3 +67,7 @@ yarn.lock
 .DS_Store
 .vscode
 *.xslx
+
+# Build
+
+build/
