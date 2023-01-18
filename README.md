@@ -2,6 +2,44 @@
 
 <br>
 
+## Usage
+
+<br>
+
+To upload a fact follow these steps:
+
+1. Press the `Share a Fact` button to open the fact form
+2. Enter your facts' text in 200 characters or less
+3. Enter your trustworthy source beginning with `'http://` or `https://`
+4. Select a category
+5. Press the `Post` button.
+
+<br>
+
+![Upload](assets/upload.png)
+
+<br>
+
+Down below you can see the fact I just created! Note that the fact **React was developed by Google** is disputed, as seen by the `[⛔️ DISPUTED]` that precedes it. For a fact to be disputed it must be voted false more than it was voted interesting. To vote on a fact simply press the `👍` or `⛔️` buttons as seen below as well.
+
+<br>
+
+![Disputed](assets/disputed.png)
+
+<br>
+
+![Vote](assets/vote.png)
+
+<br>
+
+Lastly, you can filter the facts in the database by their category type. Here we pressed the `Society` button to view only facts that relate to society.
+
+<br>
+
+![Filter](assets/filter.png)
+
+<br>
+
 ## Badges
 
 <br>
