@@ -51,6 +51,8 @@
 
 <br>
 
+**Today I Learned** was a full-stack web application I built as a part of **Jonas Schmedtmann's** Udemy course `"Crash Course: Build a Full-Stack Web App in a Weekend!"` It features a React front-end and a back-end powered by Supabase. Users can view all of the facts in the database as well as facts by category, can vote on facts they think are interesting or false (if a fact has more downvotes than upvotes it will be flagged as disputed) and upload their own fact. During development I was able to continue learning about React components, hooks, props, etc. and I'm so excited for you to see the final product! If you wish to check it out simply click on the Netlify deployment link above.
+
 <br>
 
 ## Installation
