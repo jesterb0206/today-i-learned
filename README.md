@@ -173,6 +173,6 @@ If you have any additional questions, you can reach me at:
 
 <br>
 
-jesterb@seattleu.edu
+bradleyjester0@gmail.com
 
 <br>
